@@ -1,0 +1,8 @@
+# Ignore mac system
+.DS_store
+
+# no idea what this is
+gtk-2.0/
+
+# fontforge not configured
+fontforge/
