@@ -69,11 +69,6 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  ["bubbly.nvim"] = {
-    loaded = true,
-    path = "/Users/michaelzhou/.local/share/nvim/site/pack/packer/start/bubbly.nvim",
-    url = "https://github.com/datwaft/bubbly.nvim"
-  },
   catppuccin = {
     loaded = true,
     path = "/Users/michaelzhou/.local/share/nvim/site/pack/packer/start/catppuccin",
@@ -94,45 +89,10 @@ _G.packer_plugins = {
     path = "/Users/michaelzhou/.local/share/nvim/site/pack/packer/start/coq.thirdparty",
     url = "https://github.com/ms-jpq/coq.thirdparty"
   },
-  ["lsp-colors.nvim"] = {
-    loaded = true,
-    path = "/Users/michaelzhou/.local/share/nvim/site/pack/packer/start/lsp-colors.nvim",
-    url = "https://github.com/folke/lsp-colors.nvim"
-  },
-  ["nvim-lsp-installer"] = {
-    loaded = true,
-    path = "/Users/michaelzhou/.local/share/nvim/site/pack/packer/start/nvim-lsp-installer",
-    url = "https://github.com/williamboman/nvim-lsp-installer"
-  },
-  ["nvim-lspconfig"] = {
-    loaded = true,
-    path = "/Users/michaelzhou/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
-    url = "https://github.com/neovim/nvim-lspconfig"
-  },
-  ["nvim-treesitter"] = {
-    loaded = true,
-    path = "/Users/michaelzhou/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
-    url = "https://github.com/nvim-treesitter/nvim-treesitter"
-  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/Users/michaelzhou/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
-  },
-  ["plenary.nvim"] = {
-    loaded = true,
-    path = "/Users/michaelzhou/.local/share/nvim/site/pack/packer/start/plenary.nvim",
-    url = "https://github.com/nvim-lua/plenary.nvim"
-  },
-  ["spellsitter.nvim"] = {
-    loaded = true,
-    path = "/Users/michaelzhou/.local/share/nvim/site/pack/packer/start/spellsitter.nvim",
-    url = "https://github.com/lewis6991/spellsitter.nvim"
-  },
-  ["telescope.nvim"] = {
-    loaded = true,
-    path = "/Users/michaelzhou/.local/share/nvim/site/pack/packer/start/telescope.nvim",
-    url = "https://github.com/nvim-telescope/telescope.nvim"
   }
 }
 

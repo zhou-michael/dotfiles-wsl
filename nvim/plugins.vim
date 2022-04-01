@@ -15,15 +15,15 @@ Plug 'lervag/vimtex'
                 \ 'build_dir' : 'build',
                 \}
     let g:tex_conceal='abdmgs'
-
-Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
-
+"
+"Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
+"
 Plug 'tpope/vim-fugitive'
-
+"
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-
-Plug 'sheerun/vim-polyglot'
-
+"
+"Plug 'sheerun/vim-polyglot'
+"
 Plug 'tmsvg/pear-tree'
     let g:pear_tree_repeatable_expand = 0
     let g:pear_tree_smart_openers = 1
