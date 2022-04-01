@@ -7,19 +7,18 @@ require('packer').startup(function()
         as = "catppuccin"
     })
     --use 'mhartington/oceanic-next'
---    use 'nvim-treesitter/nvim-treesitter'
---    use 'neovim/nvim-lspconfig'
---    use 'williamboman/nvim-lsp-installer'
---    use 'folke/lsp-colors.nvim'
-    -- use 'windwp/nvim-autopairs'
+    use 'nvim-treesitter/nvim-treesitter'
+    use 'neovim/nvim-lspconfig'
+    use 'williamboman/nvim-lsp-installer'
+    use 'folke/lsp-colors.nvim'
+    use 'windwp/nvim-autopairs'
     use { 'ms-jpq/coq.nvim',  branch = 'dev' }
     use { 'ms-jpq/coq.artifacts', branch = 'artifacts' }
-    use 'ms-jpq/coq.thirdparty'
     -- use 'nvim-lua/lsp-status.nvim'
---    use 'datwaft/bubbly.nvim'
---    use {
---        'nvim-telescope/telescope.nvim',
---        requires = { {'nvim-lua/plenary.nvim'} }
---    }
---    use 'lewis6991/spellsitter.nvim'
+    use 'datwaft/bubbly.nvim'
+    use {
+        'nvim-telescope/telescope.nvim',
+        requires = { {'nvim-lua/plenary.nvim'} }
+    }
+    use 'lewis6991/spellsitter.nvim'
 end)
