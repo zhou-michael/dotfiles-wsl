@@ -6,3 +6,6 @@ gtk-2.0/
 
 # fontforge not configured
 fontforge/
+
+# kitty extra config file
+.kitty.conf.bak
