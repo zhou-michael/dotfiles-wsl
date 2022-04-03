@@ -53,3 +53,14 @@ if g:colors_name == 'snazzy'
     hi Visual guifg=NONE guibg=#3a3d4d guisp=#3a3d4d gui=NONE ctermfg=NONE ctermbg=236 cterm=NONE
 endif
 
+let g:SnazzyTransparent = 1 "snazzy transparent background
+let g:tokyonight_transparent = 1 "tokyonight transparent background
+" lervag/vimtex setup
+let g:tex_flavor='latex'
+let g:vimtex_view_method='skim'
+let g:vimtex_quickfix_mode=1
+let g:vimtex_compiler_latexmk = {
+            \ 'build_dir' : 'build',
+            \}
+let g:tex_conceal='abdmgs'
+
