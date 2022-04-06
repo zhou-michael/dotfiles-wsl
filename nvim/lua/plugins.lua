@@ -12,7 +12,7 @@ require('packer').startup(function()
     use 'williamboman/nvim-lsp-installer'
     use 'folke/lsp-colors.nvim'
     use 'windwp/nvim-autopairs'
-    use { 'ms-jpq/coq.nvim',  branch = 'dev' }
+    use 'ms-jpq/coq.nvim'
     use { 'ms-jpq/coq.artifacts', branch = 'artifacts' }
     -- use 'nvim-lua/lsp-status.nvim'
     use 'datwaft/bubbly.nvim'
