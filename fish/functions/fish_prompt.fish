@@ -54,6 +54,8 @@ function fish_prompt
     end
   end
 
-  echo -n -s $failed $arrow $time ' ' $cwd $git_info $normal ' '
+  set -l suffix '~>'
+
+  echo -n -s $failed $arrow $time ' ' $cwd $git_info $normal ' ' $suffix ' '
 
 end
