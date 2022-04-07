@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "/Users/michaelzhou/.local/share/nvim/site/pack/packer/start/coq.nvim",
     url = "https://github.com/ms-jpq/coq.nvim"
   },
+  ["glow.nvim"] = {
+    loaded = true,
+    path = "/Users/michaelzhou/.local/share/nvim/site/pack/packer/start/glow.nvim",
+    url = "https://github.com/ellisonleao/glow.nvim"
+  },
   ["lsp-colors.nvim"] = {
     loaded = true,
     path = "/Users/michaelzhou/.local/share/nvim/site/pack/packer/start/lsp-colors.nvim",
