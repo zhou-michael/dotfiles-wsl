@@ -21,4 +21,5 @@ require('packer').startup(function()
         requires = { {'nvim-lua/plenary.nvim'} }
     }
     use 'lewis6991/spellsitter.nvim'
+    use "ellisonleao/glow.nvim"
 end)

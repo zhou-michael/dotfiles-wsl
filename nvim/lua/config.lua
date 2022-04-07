@@ -215,3 +215,11 @@ npairs.add_rules({
 
 require('spellsitter').setup()
 
+-------------------
+--- glow config ---
+-------------------
+
+vim.g.glow_binary_path = vim.env.PATH
+vim.g.glow_border = "rounded"
+vim.g.glow_width = 120
+
