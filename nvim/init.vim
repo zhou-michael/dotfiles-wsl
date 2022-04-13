@@ -26,6 +26,10 @@ set conceallevel=2
 
 nnoremap <C-n> :CHADopen<CR>
 
+autocmd BufEnter *.tex setlocal foldmethod=expr
+autocmd BufEnter *.tex setlocal foldexpr=vimtex#fold#level(v:lnum)
+autocmd BufEnter *.tex setlocal foldtext=vimtex#fold#text()
+
 hi SyntasticErrorSign ctermfg=1 ctermbg=none
 hi SyntasticWarningSign ctermfg=2 ctermbg=none
 hi SyntasticStyleErrorSign ctermfg=1 ctermbg=none
@@ -53,8 +57,14 @@ if g:colors_name == 'snazzy'
     hi Visual guifg=NONE guibg=#3a3d4d guisp=#3a3d4d gui=NONE ctermfg=NONE ctermbg=236 cterm=NONE
 endif
 
-let g:SnazzyTransparent = 1 "snazzy transparent background
-let g:tokyonight_transparent = 1 "tokyonight transparent background
+" PLUGIN OPTIONS
+
+"snazzy transparent background
+let g:SnazzyTransparent = 1
+
+"tokyonight transparent background
+let g:tokyonight_transparent = 1
+
 " lervag/vimtex setup
 let g:tex_flavor='latex'
 let g:vimtex_view_method='skim'
@@ -63,4 +73,5 @@ let g:vimtex_compiler_latexmk = {
             \ 'build_dir' : 'build',
             \}
 let g:tex_conceal='abdmgs'
+let g:vimtex_view_skim_sync = 1
 
