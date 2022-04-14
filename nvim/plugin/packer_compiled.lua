@@ -99,6 +99,11 @@ _G.packer_plugins = {
     path = "/Users/michaelzhou/.local/share/nvim/site/pack/packer/start/lsp-colors.nvim",
     url = "https://github.com/folke/lsp-colors.nvim"
   },
+  ["lspsaga.nvim"] = {
+    loaded = true,
+    path = "/Users/michaelzhou/.local/share/nvim/site/pack/packer/start/lspsaga.nvim",
+    url = "https://github.com/glepnir/lspsaga.nvim"
+  },
   ["nvim-autopairs"] = {
     loaded = true,
     path = "/Users/michaelzhou/.local/share/nvim/site/pack/packer/start/nvim-autopairs",

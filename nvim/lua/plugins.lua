@@ -22,4 +22,5 @@ require('packer').startup(function()
     }
     use 'lewis6991/spellsitter.nvim'
     use "ellisonleao/glow.nvim"
+    use 'glepnir/lspsaga.nvim'
 end)

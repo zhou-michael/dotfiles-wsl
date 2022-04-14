@@ -223,3 +223,9 @@ vim.g.glow_binary_path = vim.env.PATH
 vim.g.glow_border = "rounded"
 vim.g.glow_width = 120
 
+-------------------
+--- saga config ---
+-------------------
+
+local saga = require 'lspsaga'
+saga.init_lsp_saga()
