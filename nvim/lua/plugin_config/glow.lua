@@ -1,6 +1,6 @@
 ---------------------------
---- spellchecker config ---
+--- glow config ---
 ---------------------------
 
-require('spellsitter').setup()
+require('glow').setup()
 

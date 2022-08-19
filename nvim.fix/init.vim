@@ -2,7 +2,7 @@ filetype plugin indent on
 source ~/.config/nvim/plugins.vim
 lua require('plugins')
 
-colorscheme catppuccin
+"colorscheme catppuccin
 
 set nocompatible
 set number
@@ -24,7 +24,7 @@ set showcmd
 set encoding=utf-8
 set conceallevel=2
 
-nnoremap <C-n> :NvimTreeToggle<CR>
+nnoremap <C-n> :CHADopen<CR>
 
 autocmd BufEnter *.tex setlocal foldmethod=expr
 autocmd BufEnter *.tex setlocal foldexpr=vimtex#fold#level(v:lnum)
@@ -55,11 +55,6 @@ if g:colors_name == 'snazzy'
 
     hi clear Visual
     hi Visual guifg=NONE guibg=#3a3d4d guisp=#3a3d4d gui=NONE ctermfg=NONE ctermbg=236 cterm=NONE
-endif
-if g:colors_name == 'catppuccin'
-    hi Comment guifg=#686c87
-    hi LineNr guifg=#686c87
-    hi IndentBlankLineChar guifg=#686c87
 endif
 
 " PLUGIN OPTIONS
