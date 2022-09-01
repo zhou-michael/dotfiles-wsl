@@ -1,5 +1,4 @@
 filetype plugin indent on
-source ~/.config/nvim/plugins.vim
 lua require('plugins')
 
 colorscheme catppuccin
