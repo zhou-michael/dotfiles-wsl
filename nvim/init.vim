@@ -1,6 +1,7 @@
 filetype plugin indent on
-lua require('plugins')
 
+set termguicolors
+lua require('plugins')
 colorscheme catppuccin
 
 set nocompatible
@@ -11,7 +12,7 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set timeoutlen=150
-set signcolumn=auto:1
+set signcolumn=number
 set nowrap
 set showtabline=2
 set nofoldenable
