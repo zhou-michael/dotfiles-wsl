@@ -33,6 +33,6 @@ function fish_user_key_bindings
         end
         set out (string sub -s 1 -l (math $last_index - 1) $argv[1])
 
-        co $argv[1] && "./$out" & fg
+        compile $argv[1] && "./$out" & fg
     end
 end
