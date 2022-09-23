@@ -11,7 +11,7 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set timeoutlen=150
-set signcolumn=number
+set signcolumn=auto:1
 set nowrap
 set showtabline=2
 set nofoldenable
