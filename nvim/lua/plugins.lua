@@ -5,37 +5,74 @@ require('packer').startup(function()
     --- UI ---
     ----------
     use { 'catppuccin/nvim', as = 'catppuccin' }
-    use { 'nvim-treesitter/nvim-treesitter' }
+    use 'bluz71/vim-moonfly-colors'
+    use 'mhartington/oceanic-next'
+    use 'connorholyday/vim-snazzy'
+    use 'folke/tokyonight.nvim'
+    use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+    use 'nvim-treesitter/nvim-treesitter-context'
     use 'datwaft/bubbly.nvim'
     use 'kyazdani42/nvim-web-devicons'
+    use 'lukas-reineke/indent-blankline.nvim'
+    use 'norcalli/nvim-colorizer.lua'
+
 
     -----------
     --- LSP ---
     -----------
-    use 'neovim/nvim-lspconfig'
-    use 'williamboman/nvim-lsp-installer'
     use 'folke/lsp-colors.nvim'
     use 'nvim-lua/lsp-status.nvim'
+    use 'glepnir/lspsaga.nvim'
+    use 'neovim/nvim-lspconfig'
+    use 'williamboman/nvim-lsp-installer'
 
 
+    -------------
+    --- utils ---
+    -------------
+    use 'lewis6991/spellsitter.nvim'
     use 'windwp/nvim-autopairs'
+    use 'tpope/vim-fugitive'
+
+
+    ----------------------
+    --- powerful stuff ---
+    ----------------------
     use {
         'nvim-telescope/telescope.nvim',
+        tag = '0.1.0',
         requires = { {'nvim-lua/plenary.nvim'} }
     }
-    use 'lewis6991/spellsitter.nvim'
     use 'ellisonleao/glow.nvim'
     use 'kyazdani42/nvim-tree.lua'
+    use 'lervag/vimtex'
+    use 'SirVer/ultisnips'
+
+
+    ----------------
+    --- nvim-cmp ---
+    ----------------
+    use "hrsh7th/nvim-cmp"
+    use "hrsh7th/cmp-buffer"
+    use "hrsh7th/cmp-path"
+    use "hrsh7th/cmp-cmdline"
+    use "hrsh7th/cmp-nvim-lsp"
+    use "hrsh7th/cmp-nvim-lua"
+    use 'quangnguyen30192/cmp-nvim-ultisnips'
+
 
     ----------------------
     --- Unused plugins ---
     ----------------------
-
-    --use 'glepnir/lspsaga.nvim'
-    --use 'bluz71/vim-moonfly-colors'
-    --use 'mhartington/oceanic-next'
-    --use 'ms-jpq/coq.nvim'
-    --use { 'ms-jpq/coq.artifacts', branch = 'artifacts' }
+--    use 'ms-jpq/coq.nvim'
+--    use { 'ms-jpq/coq.artifacts', branch = 'artifacts' }
+--    use { 
+--        'williamboman/mason.nvim',
+--        requires = {
+--            'neovim/nvim-lspconfig',
+--        },
+--    }
+--    use 'williamboman/mason-lspconfig.nvim'
 end)
 
 require('config')

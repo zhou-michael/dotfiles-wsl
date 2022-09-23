@@ -1,4 +1,4 @@
--------------------------
+------------------------
 --- Treesitter config ---
 -------------------------
 local configs = require('nvim-treesitter.configs')

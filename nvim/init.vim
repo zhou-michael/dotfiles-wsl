@@ -29,11 +29,6 @@ autocmd BufEnter *.tex setlocal foldmethod=expr
 autocmd BufEnter *.tex setlocal foldexpr=vimtex#fold#level(v:lnum)
 autocmd BufEnter *.tex setlocal foldtext=vimtex#fold#text()
 
-hi SyntasticErrorSign ctermfg=1 ctermbg=none
-hi SyntasticWarningSign ctermfg=2 ctermbg=none
-hi SyntasticStyleErrorSign ctermfg=1 ctermbg=none
-hi SyntasticStyleWarningSign ctermfg=2 ctermbg=none
-
 if g:colors_name == 'snazzy'
     set nocursorline
 
@@ -61,6 +56,10 @@ if g:colors_name == 'catppuccin'
     hi IndentBlankLineChar guifg=#686c87
 endif
 
+" Treesitter Context Highlight groups
+hi TreesitterContext guibg=NONE gui=italic,bold
+hi TreesitterContextLineNumber guifg=#9690AD gui=italic,bold
+
 " PLUGIN OPTIONS
 
 "snazzy transparent background
@@ -78,4 +77,9 @@ let g:vimtex_compiler_latexmk = {
             \}
 let g:tex_conceal='abdmgs'
 let g:vimtex_view_skim_sync = 1
+
+lua << EOF
+package.loaded['comment'] = nil
+require 'comment'
+EOF
 
