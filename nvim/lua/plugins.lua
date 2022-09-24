@@ -23,8 +23,15 @@ require('packer').startup(function()
     use 'folke/lsp-colors.nvim'
     use 'nvim-lua/lsp-status.nvim'
     use 'glepnir/lspsaga.nvim'
+    use {
+        'williamboman/mason.nvim',
+        requires = {
+            'neovim/nvim-lspconfig',
+        },
+    }
+    use 'williamboman/mason-lspconfig.nvim'
     use 'neovim/nvim-lspconfig'
-    use 'williamboman/nvim-lsp-installer'
+    --use 'williamboman/nvim-lsp-installer'
 
 
     -------------
@@ -44,6 +51,7 @@ require('packer').startup(function()
         tag = '0.1.0',
         requires = { {'nvim-lua/plenary.nvim'} }
     }
+    use 'nvim-telescope/telescope-file-browser.nvim'
     use 'ellisonleao/glow.nvim'
     use 'kyazdani42/nvim-tree.lua'
     use 'lervag/vimtex'
@@ -67,13 +75,6 @@ require('packer').startup(function()
     ----------------------
 --    use 'ms-jpq/coq.nvim'
 --    use { 'ms-jpq/coq.artifacts', branch = 'artifacts' }
---    use { 
---        'williamboman/mason.nvim',
---        requires = {
---            'neovim/nvim-lspconfig',
---        },
---    }
---    use 'williamboman/mason-lspconfig.nvim'
 end)
 
 require('config')
