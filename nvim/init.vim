@@ -61,6 +61,9 @@ endif
 hi TreesitterContext guibg=NONE gui=italic,bold
 hi TreesitterContextLineNumber guifg=#9690AD gui=italic,bold
 
+" floating window no background
+hi NormalFloat guibg=NONE
+
 " PLUGIN OPTIONS
 
 "snazzy transparent background
