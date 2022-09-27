@@ -20,5 +20,4 @@ lspconfig.sumneko_lua.setup({
 })
 
 lspconfig.vimls.setup(default_opt)
-
 lspconfig.clangd.setup(default_opt)
