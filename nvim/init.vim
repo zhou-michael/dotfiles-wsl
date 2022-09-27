@@ -58,7 +58,7 @@ if g:colors_name == 'catppuccin'
 endif
 
 " Treesitter Context Highlight groups
-hi TreesitterContext guibg=NONE gui=italic,bold
+hi TreesitterContext guibg=#333546 gui=italic,bold
 hi TreesitterContextLineNumber guifg=#9690AD gui=italic,bold
 
 " floating window no background
