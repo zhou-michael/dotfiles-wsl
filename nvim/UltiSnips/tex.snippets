@@ -125,9 +125,3 @@ snip.rv = stripped[0:i] + "\\frac{" + stripped[i+1:-1] + "}"
 `{$1}$0
 endsnippet
 
-# context "(snip.column==0 or snip.buffer[snip.line][snip.column-1] != '\\') and (snip.column == len(snip.buffer[snip.line]) - 1 or re.match('\W', snip.buffer[snip.line][snip.column+1]))"
-# pre_expand "snip.buffer[snip.line] = snip.buffer[snip.line][:snip.column] + snip.buffer[snip.line][snip.column+1:] if snip.column < len(snip.buffer[snip.line]) - 1 and snip.buffer[snip.line][snip.column+1] == '$' and find_matching_quotations(snip.buffer[snip.line][:snip.column], snip.column-1, 0, '$') else snip.buffer[snip.line][:snip.column] + '$$' + snip.buffer[snip.line][snip.column+1:] if (snip.column == 0 or re.match('\W', snip.buffer[snip.line][snip.column-1])) else snip.buffer[snip.line]; snip.cursor.set(snip.line, snip.column+1) 
-# snippet $ "match dollar signs" Ai
-# endsnippet
-
-
