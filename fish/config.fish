@@ -4,4 +4,6 @@ if status is-interactive
     set -gx FZF_DEFAULT_OPTS '--height 40% --layout=reverse --border'
     # starship init fish | source
     set fish_greeting
+
+    set -Ua fish_user_paths $HOME/.cargo/bin
 end
