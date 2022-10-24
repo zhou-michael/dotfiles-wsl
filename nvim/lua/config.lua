@@ -16,4 +16,7 @@ require('config.gitsigns')
 require('config.nvim_colorizer')
 require('config.lsp')
 require('config.telescope')
+require('config.twilight')
+require('config.indent-blankline')
+require('config.cpp-javadoc')
 
