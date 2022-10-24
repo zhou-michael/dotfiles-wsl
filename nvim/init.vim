@@ -12,7 +12,7 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set timeoutlen=150
-set signcolumn=number
+set signcolumn=yes
 set nowrap
 set showtabline=2
 set nofoldenable
@@ -25,6 +25,7 @@ set encoding=utf-8
 set conceallevel=2
 
 nnoremap <C-n> :NvimTreeToggle<CR>
+nnoremap <C-m> :Telescope<CR>
 
 autocmd BufEnter *.tex setlocal foldmethod=expr
 autocmd BufEnter *.tex setlocal foldexpr=vimtex#fold#level(v:lnum)
@@ -52,13 +53,17 @@ if g:colors_name == 'snazzy'
     hi Visual guifg=NONE guibg=#3a3d4d guisp=#3a3d4d gui=NONE ctermfg=NONE ctermbg=236 cterm=NONE
 endif
 if g:colors_name == 'catppuccin'
+    set cursorline
+    hi CursorLine guibg=#29273D
+
     hi Comment guifg=#686c87
     hi LineNr guifg=#686c87
     hi IndentBlankLineChar guifg=#686c87
+    hi IndentBlankLineContextChar guifg=#b6bbdb
 endif
 
 " Treesitter Context Highlight groups
-hi TreesitterContext guibg=#333546 gui=italic,bold
+hi TreesitterContext guibg=#35304A
 hi TreesitterContextLineNumber guifg=#9690AD gui=italic,bold
 
 " floating window no background
@@ -81,9 +86,4 @@ let g:vimtex_compiler_latexmk = {
             \}
 let g:tex_conceal='abdmgs'
 let g:vimtex_view_skim_sync = 1
-
-lua << EOF
-package.loaded['comment'] = nil
-require 'comment'
-EOF
 
