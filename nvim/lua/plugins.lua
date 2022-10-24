@@ -11,10 +11,12 @@ require('packer').startup(function()
     use 'folke/tokyonight.nvim'
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
     use 'nvim-treesitter/nvim-treesitter-context'
+    use 'nvim-treesitter/playground'
     use 'datwaft/bubbly.nvim'
     use 'kyazdani42/nvim-web-devicons'
     use 'lukas-reineke/indent-blankline.nvim'
     use 'norcalli/nvim-colorizer.lua'
+    use 'folke/twilight.nvim'
 
 
     -----------
@@ -69,6 +71,8 @@ require('packer').startup(function()
     use "hrsh7th/cmp-nvim-lua"
     use 'quangnguyen30192/cmp-nvim-ultisnips'
 
+
+    use '~/Documents/code/cpp-javadoc'
 
     ----------------------
     --- Unused plugins ---
