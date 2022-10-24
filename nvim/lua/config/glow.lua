@@ -2,5 +2,7 @@
 --- glow config ---
 ---------------------------
 
-require('glow').setup()
+require('glow').setup({
+    border = 'rounded'
+})
 
