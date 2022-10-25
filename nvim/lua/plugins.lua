@@ -72,8 +72,7 @@ require('packer').startup(function()
     use 'quangnguyen30192/cmp-nvim-ultisnips'
 
 
-    use '~/Documents/code/cpp-javadoc'
-
+    use 'zhou-michael/cpp-javadoc'
     ----------------------
     --- Unused plugins ---
     ----------------------
