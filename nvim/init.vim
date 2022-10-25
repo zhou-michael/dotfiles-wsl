@@ -25,7 +25,7 @@ set encoding=utf-8
 set conceallevel=2
 
 nnoremap <C-n> :NvimTreeToggle<CR>
-nnoremap <C-m> :Telescope<CR>
+nnoremap <C-l> :Telescope<CR>
 
 autocmd BufEnter *.tex setlocal foldmethod=expr
 autocmd BufEnter *.tex setlocal foldexpr=vimtex#fold#level(v:lnum)
