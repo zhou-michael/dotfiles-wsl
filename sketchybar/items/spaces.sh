@@ -21,7 +21,7 @@ do
                               label.font="sketchybar-app-font:Regular:14.0" \
                               label.background.height=24                    \
                               label.background.drawing=on                   \
-                              label.background.color=$BACKGROUND_2  \
+                              label.background.color=$BACKGROUND_2          \
                               label.background.corner_radius=9              \
                               label.drawing=off                             \
                               script="$PLUGIN_DIR/space.sh"                 \
