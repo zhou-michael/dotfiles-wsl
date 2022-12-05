@@ -50,7 +50,10 @@ windows_on_spaces () {
       apps=$(yabai -m query --windows --space $space | jq -r ".[].app")
       if [ "$apps" != "" ]; then
         while IFS= read -r app; do
-          icon_strip+=" $($HOME/.config/sketchybar/plugins/icon_map.sh "$app")"
+          icon="$($HOME/.config/sketchybar/plugins/icon_map.sh "$app")"
+          if [[ "$icon_strip" != *"$icon"* ]]; then
+            icon_strip+=" $($HOME/.config/sketchybar/plugins/icon_map.sh "$app")"
+          fi
         done <<< "$apps"
       fi
       args+=(--set space.$space label="$icon_strip" label.drawing=on)
