@@ -1,3 +1,4 @@
+#!/usr/bin/env sh
 # when brew upgrade, remember to reset hash at
 # sudo visudo -f /private/etc/sudoers.d/yabai
 # with shasum -a 256 $(which yabai)
@@ -6,56 +7,46 @@
 yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
 sudo yabai --load-sa
 
-######################
-### TILING OPTIONS ###
-######################
-
-# bsp/managed - windows managed by yabai
-# float [default] - left alone
-# tag --space 1 to override for specific spaces
-yabai -m config layout bsp 
-yabai -m config --space 1 layout stack
-
-# first_child - new window spawns to the left if vertical split, or top if horizontal split
-# second_child [default] - reverse behavior
-yabai -m config window_placement second_child
-
-########################
-### PADDING AND GAPS ###
-########################
-
-# set padding (default: 0)
-# tag --space 1 to override for specific spaces
-yabai -m config top_padding    15 
-yabai -m config bottom_padding 15
-yabai -m config left_padding   15
-yabai -m config right_padding  15
-yabai -m config window_gap     15
-yabai -m config external_bar   all:0:34
-
-####################
-### SPLIT RATIOS ###
-####################
-
-# on - all windows occupy same space
-# off [default] - otherwise
-yabai -m config auto_balance on 
-
-# value determines proportion of space that old window gets when new window is created (default: 0.5)
-# only works when auto_balance is off
-yabai -m config split_ratio 0.5
-
-yabai -m config window_shadow off
-
-yabai -m config window_opacity off
-yabai -m config active_window_opacity 1.0
-yabai -m config normal_window_opacity 0.9
+# global settings
+yabai -m config                                 \
+    mouse_follows_focus          off            \
+    focus_follows_mouse          off            \
+    window_origin_display        default        \
+    window_placement             second_child   \
+    window_topmost               off            \
+    window_shadow                on             \
+    window_opacity               off            \
+    window_opacity_duration      0.0            \
+    active_window_opacity        1.0            \
+    normal_window_opacity        0.90           \
+    window_animation_duration    0.0            \
+    insert_feedback_color        0xffd75f5f     \
+    window_border                off            \
+    window_border_width          4              \
+    window_border_radius         12             \
+    window_border_blur           off            \
+    window_border_hidpi          on             \
+    active_window_border_color   0xff775759     \
+    normal_window_border_color   0xff555555     \
+    split_ratio                  0.50           \
+    split_type                   auto           \
+    auto_balance                 off            \
+    top_padding                  10             \
+    bottom_padding               10             \
+    left_padding                 10             \
+    right_padding                10             \
+    window_gap                   10             \
+    external_bar                 all:0:35       \
+    layout                       bsp            \
+    mouse_modifier               fn             \
+    mouse_action1                move           \
+    mouse_action2                resize         \
+    mouse_drop_action            swap
 
 
 #############
 ### RULES ###
 #############
-
 
 yabai -m rule --add label="Finder" app="^Finder$" title="(Co(py|nnect)|Move|Info|Pref)" manage=off
 yabai -m rule --add label="Safari" app="^Safari$" title="^(General|(Tab|Password|Website|Extension)s|AutoFill|Se(arch|curity)|Privacy|Advance)$" manage=off
@@ -67,3 +58,12 @@ yabai -m rule --add label="Dictionary" app="^Dictionary$" manage=off
 yabai -m rule --add label="mpv" app="^mpv$" manage=off
 yabai -m rule --add label="Software Update" title="Software Update" manage=off
 yabai -m rule --add label="About This Mac" app="System Information" title="About This Mac" manage=off
+
+
+################################
+### SIGNALS (for sketchybar) ###
+################################
+
+yabai -m signal --add event=window_focused action="sketchybar --trigger window_focus"
+yabai -m signal --add event=window_created action="sketchybar --trigger windows_on_spaces"
+yabai -m signal --add event=window_destroyed action="sketchybar --trigger windows_on_spaces"
