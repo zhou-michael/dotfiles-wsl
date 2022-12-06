@@ -4,6 +4,9 @@
 export BLACK=0xff181926
 export WHITE=0xffcad3f5
 export RED=0xffed8796
+export MAROON=0xffee99a0
+export PEACH=0xfff5a97f
+export YELLOW=0xffeed49f
 export GREEN=0xffa6da95
 export BLUE=0xff8aadf4
 export YELLOW=0xffeed49f
