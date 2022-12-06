@@ -1,6 +1,8 @@
 #!/usr/bin/env sh
 
-FRONT_APP_SCRIPT='sketchybar --set $NAME label="$INFO"'
+#FRONT_APP_SCRIPT='sketchybar --set $NAME label="$INFO"'
+#FRONT_APP_SCRIPT='$PLUGIN_DIR/front_app.sh'
+FRONT_APP_SCRIPT='if [[ ${#INFO} -gt 25 ]]; then sketchybar --set $NAME label="${INFO:0:22}..."; else sketchybar --set $NAME label=$INFO; fi'
 
 sketchybar --add       event        window_focus                  \
            --add       event        windows_on_spaces             \
