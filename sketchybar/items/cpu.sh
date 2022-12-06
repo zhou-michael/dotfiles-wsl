@@ -4,6 +4,7 @@ sketchybar --add item        cpu.top right                  \
            --set cpu.top     label.font="$FONT:Semibold:7"  \
                              label=CPU                      \
                              icon.drawing=off               \
+                             right_padding=15               \
                              width=0                        \
                              y_offset=6                     \
                                                             \
