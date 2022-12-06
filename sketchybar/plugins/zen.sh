@@ -12,8 +12,7 @@ zen_on() {
              --set spotify.anchor drawing=off \
              --set spotify.play updates=off \
              --set brew drawing=off \
-             --set battery drawing=off \
-             --bar padding_left=18
+             --set battery drawing=off
 #             --set divider drawing=off \
 }
 
@@ -28,8 +27,7 @@ zen_off() {
              --set volume_alias drawing=on \
              --set spotify.play updates=on \
              --set brew drawing=on \
-             --set battery drawing=on \
-             --bar padding_left=7
+             --set battery drawing=on
 #             --set divider drawing=on \
 }
 
