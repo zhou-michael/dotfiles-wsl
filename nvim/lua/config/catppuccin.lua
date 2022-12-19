@@ -114,7 +114,7 @@ require("catppuccin").setup({
         mocha = function(cp)
             return {
                 -- For base configs.
-                CursorLineNr = { fg = cp.green },
+                --CursorLineNr = { fg = cp.green },
                 Search = { bg = cp.surface1, fg = cp.pink, style = { "bold" } },
                 IncSearch = { bg = cp.pink, fg = cp.surface1 },
 
