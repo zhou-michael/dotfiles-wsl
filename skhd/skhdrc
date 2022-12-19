@@ -158,23 +158,23 @@ shift + alt - d : yabai -m window --resize right:0:-20
 # alt - p : yabai -m window --toggle sticky --toggle topmost --toggle pip
 
 # open terminal, blazingly fast compared to iTerm/Hyper
-shift + cmd - return : /Applications/kitty.app/Contents/MacOS/kitty --single-instance -d ~
+rcmd + shift - return : /Applications/kitty.app/Contents/MacOS/kitty --single-instance -d ~
 
 # set layout of current space
-alt - 1: yabai -m space --layout bsp
-alt - 2: yabai -m space --layout stack
-alt - 3: yabai -m space --layout float
+rcmd + shift - 1: yabai -m space --layout bsp
+rcmd + shift - 2: yabai -m space --layout stack
+rcmd + shift - 3: yabai -m space --layout float
 
 # toggle float on window 
-alt - space : yabai -m window --toggle float; sketchybar --trigger window_focus
+rcmd - space : yabai -m window --toggle float; sketchybar --trigger window_focus
 
 # switch to space
-ctrl - 1: yabai -m space --focus 1
-ctrl - 2: yabai -m space --focus 2
-ctrl - 3: yabai -m space --focus 3
-ctrl - 4: yabai -m space --focus 4
-ctrl - 5: yabai -m space --focus 5
-ctrl - 6: yabai -m space --focus 6
-ctrl - 7: yabai -m space --focus 7
-ctrl - 8: yabai -m space --focus 8
+rcmd - 1: yabai -m space --focus 1
+rcmd - 2: yabai -m space --focus 2
+rcmd - 3: yabai -m space --focus 3
+rcmd - 4: yabai -m space --focus 4
+rcmd - 5: yabai -m space --focus 5
+rcmd - 6: yabai -m space --focus 6
+rcmd - 7: yabai -m space --focus 7
+rcmd - 8: yabai -m space --focus 8
 
