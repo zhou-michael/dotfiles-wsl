@@ -1,7 +1,11 @@
 [init]
 	defaultBranch = main
+	templateDir = /Users/michaelzhou/.git_templates
 [user]
 	name = Michael Zhou
 	email = micha.zhou@gmail.com
 [core]
-	editor = nvim
+	editor = /usr/local/bin/nvim
+[transfer]
+	fsckobjects = true
+[alias]
