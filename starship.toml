@@ -1,3 +1,8 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
+[git_branch]
+style = 'bold blue'
+
+[git_status]
+style = 'bold purple'
 
