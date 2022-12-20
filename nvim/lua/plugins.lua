@@ -12,7 +12,8 @@ require('packer').startup(function()
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
     use 'nvim-treesitter/nvim-treesitter-context'
     use 'nvim-treesitter/playground'
-    use 'datwaft/bubbly.nvim'
+    --use 'datwaft/bubbly.nvim'
+    use 'nvim-lualine/lualine.nvim'
     use 'kyazdani42/nvim-web-devicons'
     use 'lukas-reineke/indent-blankline.nvim'
     use 'norcalli/nvim-colorizer.lua'
@@ -22,6 +23,8 @@ require('packer').startup(function()
     -----------
     --- LSP ---
     -----------
+    use 'neovim/nvim-lspconfig'
+    use 'simrat39/rust-tools.nvim'
     use 'folke/lsp-colors.nvim'
     use 'nvim-lua/lsp-status.nvim'
     use 'glepnir/lspsaga.nvim'
@@ -32,7 +35,6 @@ require('packer').startup(function()
         },
     }
     use 'williamboman/mason-lspconfig.nvim'
-    use 'neovim/nvim-lspconfig'
     --use 'williamboman/nvim-lsp-installer'
 
 

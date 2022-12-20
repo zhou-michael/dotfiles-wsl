@@ -2,7 +2,7 @@
 --- Requiring plugin configurations ---
 ---------------------------------------
 require('config.treesitter')
-require('config.bubbly')
+--require('config.bubbly')
 require('config.nvim_autopairs')
 require('config.glow')
 require('config.spellsitter')
@@ -19,4 +19,5 @@ require('config.twilight')
 require('config.indent-blankline')
 require('config.cpp-javadoc')
 require('config.catppuccin')
+require('config.lualine')
 

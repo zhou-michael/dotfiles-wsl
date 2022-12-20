@@ -43,7 +43,7 @@ require("catppuccin").setup({
             },
         },
         lsp_trouble = true,
-        lsp_saga = true,
+        lsp_saga = false,
         gitgutter = false,
         gitsigns = true,
         telescope = true,

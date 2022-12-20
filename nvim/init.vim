@@ -14,7 +14,7 @@ set expandtab
 set timeoutlen=150
 set signcolumn=yes
 set nowrap
-set showtabline=2
+set showtabline=0
 set nofoldenable
 set scrolloff=1
 set spell
