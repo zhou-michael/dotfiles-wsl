@@ -5,4 +5,7 @@ style = 'bold blue'
 
 [git_status]
 style = 'bold purple'
+ahead = '↑'
+behind = '↓'
+diverged = '⥯'
 
