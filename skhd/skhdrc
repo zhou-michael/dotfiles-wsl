@@ -34,8 +34,7 @@
 #   string       = '"' 'sequence of characters' '"'
 #
 #   command      = command is executed through '$SHELL -c' and
-#                  follows valid shell syntax. if the $SHELL environment
-#                  variable is not set, it will default to '/bin/bash'.
+#                  follows valid shell syntax. if the $SHELL environment variable is not set, it will default to '/bin/bash'.
 #                  when bash is used, the ';' delimeter can be specified
 #                  to chain commands.
 #
@@ -177,4 +176,9 @@ rcmd - 5: yabai -m space --focus 5
 rcmd - 6: yabai -m space --focus 6
 rcmd - 7: yabai -m space --focus 7
 rcmd - 8: yabai -m space --focus 8
+
+# toggle tmux status bar
+cmd + shift - b [
+    "kitty": tmux set status
+]
 
