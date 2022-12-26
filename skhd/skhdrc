@@ -157,7 +157,8 @@ shift + alt - d : yabai -m window --resize right:0:-20
 # alt - p : yabai -m window --toggle sticky --toggle topmost --toggle pip
 
 # open terminal, blazingly fast compared to iTerm/Hyper
-rcmd + shift - return : /Applications/kitty.app/Contents/MacOS/kitty --single-instance -d ~
+rcmd + shift - return : /Applications/kitty.app/Contents/MacOS/kitty --single-instance -d ~ sh -c "/usr/local/bin/tmux new-session -A -s main"
+ralt + shift - return : /Applications/kitty.app/Contents/MacOS/kitty --single-instance -d ~
 
 # set layout of current space
 rcmd + shift - 1: yabai -m space --layout bsp
