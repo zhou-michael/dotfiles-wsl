@@ -109,3 +109,6 @@ source $ZSH/oh-my-zsh.sh
 
 # starship prompt
 eval "$(starship init zsh)"
+
+# add neovim to path
+export PATH="$HOME/neovim/bin:$PATH"
